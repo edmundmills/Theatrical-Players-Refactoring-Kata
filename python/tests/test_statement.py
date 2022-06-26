@@ -4,10 +4,10 @@ import pytest
 from approvaltests import verify
 from approvaltests.utils import get_adjacent_file
 
-from statement import statement
+from python.statement import statement
 
 
-def test_example_statement():
+def test_example_statement(): 
     with open(get_adjacent_file("invoice.json")) as f:
         invoice = json.loads(f.read())
     with open(get_adjacent_file("plays.json")) as f:
